@@ -14,7 +14,18 @@
     
     <servlet-mapping>
         <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+ 	
+    <servlet>
+        <servlet-name>CallbackServlet</servlet-name>
+        <servlet-class>com.twowinter.server.web.CallbackServlet</servlet-class>
+    </servlet>
+    
+    <servlet-mapping>
+        <servlet-name>CallbackServlet</servlet-name>
         <url-pattern>/*</url-pattern>
     </servlet-mapping>
+    
     
 </web-app>
